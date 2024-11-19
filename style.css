@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #18013a;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
+h1 {
+    margin: 0 0 0 2rem; 
+    color: white;
+    margin-right: 30px;
+}
+
+h2 {
+    color: #1abc8c;
+    border-bottom: 2px solid #1abc8c;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #1abc8c;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.sidebar {
+    /* ... existing styles ... */
+    z-index: 1000; /* Ensure sidebar is above overlay */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(24, 1, 58, 0.7);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#sunnah ul, #salaf ul, #quran ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sunnah li, #salaf li, #quran li {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.sahaba-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 13px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sahaba-image:hover {
+    transform: scale(1.05);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1002;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .sahaba-image {
+        max-width: 750px;
+    }
+}
+
+span[lang="ar"] {
+    font-family: 'Traditional Arabic', 'Scheherazade', serif;
+    font-size: 1.2em;
+}
+* {
+    color: white;
+}
+body {
+    background-color: #2C3E50 !important;
+}
+#logo-image {
+    height: 75px;
+    margin-left: 10px;
+}
+.padding-left {
+    padding-left: 8px;;
+}
