@@ -18,7 +18,7 @@ header {
     align-items: center;
     /* justify-content: center; */
     flex: 1;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 
@@ -209,4 +209,31 @@ body {
 }
 a {
    color: #1abc8c; 
+}
+        /* Video Stuff */
+.video-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.video-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.video-btn {
+    background-color: #1abc8c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-btn:hover {
+    background-color: #16a085;
 }
