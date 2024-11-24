@@ -53,3 +53,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+       // Video Stuff
+function replayVideo() {
+    const video = document.getElementById('tutorial-video');
+    video.currentTime = 0;
+    video.play();
+}
+
+// function toggleFullscreen() {
+//     const video = document.getElementById('tutorial-video');
+    
+//     if (video.requestFullscreen) {
+//         video.requestFullscreen();
+//     } else if (video.mozRequestFullScreen) { // Firefox
+//         video.mozRequestFullScreen();
+//     } else if (video.webkitRequestFullscreen) { // Chrome, Safari
+//         video.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+//     } else if (video.msRequestFullscreen) { // IE/Edge
+//         video.msRequestFullscreen();
+//     } else {
+//         // If none of the above work, try playing the video in a new window
+//         window.open(video.currentSrc, '_blank');
+//     }
+// }
+
+// // Auto-play the video when the page loads
+// window.addEventListener('load', function() {
+//     const video = document.getElementById('tutorial-video');
+//     video.play();
+// });
+
+// // Add event listener for fullscreen errors
+// document.addEventListener('fullscreenerror', function(event) {
+//     console.error('Fullscreen failed:', event);
+//     alert('Fullscreen mode failed. Try using the video controls instead.');
+// });
