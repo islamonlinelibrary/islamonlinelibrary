@@ -71,8 +71,8 @@ h3 {
 }
 
 .sidebar {
-    /* ... existing styles ... */
-    z-index: 1000; /* Ensure sidebar is above overlay */
+    
+    z-index: 1000; 
 }
 
 .sidebar {
